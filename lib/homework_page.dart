@@ -12,7 +12,6 @@ class MyHomePage extends StatelessWidget {
         leading: Container(
           padding: EdgeInsets.all(10.0),
           decoration: BoxDecoration(
-            
               shape: BoxShape.rectangle, border: Border.all(color: Colors.red)),
           child: const Icon(
             Icons.arrow_back,
@@ -32,7 +31,7 @@ class MyHomePage extends StatelessWidget {
       body: Column(
         children: [
           Container(
-            padding: EdgeInsets.only(left: 15, top: 10, bottom: 15),
+            padding: EdgeInsets.all(15),
             alignment: Alignment.topLeft,
             child: const Text(
               'Summer BBQ',
@@ -54,9 +53,8 @@ class MyHomePage extends StatelessWidget {
                       //borderRadius: BorderRadius.circular(8),
                       shape: BoxShape.circle,
                       image: DecorationImage(
-                          image: NetworkImage(
-                              'https://cdn.shopify.com/s/files/1/0281/7815/3547/products/blackpink-jennie-ring-k-pop-fashion-22573949092011_400x.jpg?v=1604386767'),
-                          fit: BoxFit.fill)),
+                          image: AssetImage('assets/jennie01.jpg'),
+                          fit: BoxFit.cover)),
                 ),
                 Container(
                   padding: const EdgeInsets.only(left: 20),
@@ -111,10 +109,16 @@ class MyHomePage extends StatelessWidget {
             ),
           ),
           Container(
-            padding: const EdgeInsets.only(left: 15, right: 15),
-            height: 1,
-            width: double.infinity,
-            color: Colors.grey,
+            padding: const EdgeInsets.all(15),
+            child: Column(
+              children: [
+                Container(
+                  height: 1,
+                  width: double.infinity,
+                  color: Colors.grey,
+                )
+              ],
+            ),
           ),
           Container(
             padding: EdgeInsets.only(left: 15, top: 20, right: 15),
@@ -129,9 +133,7 @@ class MyHomePage extends StatelessWidget {
                       //borderRadius: BorderRadius.circular(8),
                       shape: BoxShape.circle,
                       image: DecorationImage(
-                          image: NetworkImage(
-                              'https://www.thedailybiography.com/wp-content/uploads/2020/07/nancy-jewel-mcdonie-instagram.jpg'),
-                          fit: BoxFit.cover)),
+                          image: AssetImage('assets/jennie.jpg'))),
                 ),
                 Container(
                   padding: EdgeInsets.only(left: 20),
