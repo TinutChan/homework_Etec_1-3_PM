@@ -10,12 +10,13 @@ class MyHomePage extends StatelessWidget {
         backgroundColor: Colors.white,
         elevation: 0,
         leading: Container(
-          padding: EdgeInsets.all(10.0),
+          margin: const EdgeInsets.all(8.0),
           decoration: BoxDecoration(
               shape: BoxShape.rectangle, border: Border.all(color: Colors.red)),
           child: const Icon(
             Icons.arrow_back,
             color: Colors.black,
+            size: 25,
           ),
         ),
         actions: const [
@@ -159,7 +160,8 @@ class MyHomePage extends StatelessWidget {
             ),
           ),
           Container(
-            padding: EdgeInsets.only(left: 15, top: 20, right: 15, bottom: 10),
+            padding:
+                const EdgeInsets.only(left: 15, top: 20, right: 15, bottom: 10),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: const [
@@ -264,7 +266,7 @@ class MyHomePage extends StatelessWidget {
         autofocus: false,
         highlightElevation: 1.0,
         disabledElevation: 1.0,
-        child: Icon(Icons.reply),
+        child: const Icon(Icons.reply),
       ),
     );
   }
