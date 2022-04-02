@@ -187,45 +187,6 @@ class MyHomePage extends StatelessWidget {
               ],
             ),
           ),
-          // Container(
-          //   child: Positioned(
-          //     bottom: 10,
-          //     child: FloatingActionButton(
-          //       backgroundColor: Colors.black,
-          //       onPressed: () {},
-          //       child: Icon(Icons.reply),
-          //     ),
-          //   ),
-          // ),
-          //Spacer(),
-          // Container(
-          //   padding: EdgeInsets.all(8.0),
-          //   color: Color(0xff480ca8),
-          //   height: 60,
-          //   child: Row(
-          //     mainAxisAlignment: MainAxisAlignment.start,
-          //     children: const [
-          //       Icon(
-          //         Icons.menu,
-          //         color: Colors.white,
-          //       ),
-          //       SizedBox(
-          //         width: 20,
-          //       ),
-          //       Icon(
-          //         Icons.archive,
-          //         color: Colors.white,
-          //       ),
-          //       SizedBox(
-          //         width: 20,
-          //       ),
-          //       Icon(
-          //         Icons.star_outline,
-          //         color: Colors.white,
-          //       ),
-          //     ],
-          //   ),
-          // ),
         ],
       ),
       bottomNavigationBar: Container(
@@ -262,10 +223,7 @@ class MyHomePage extends StatelessWidget {
         onPressed: () {},
         backgroundColor: Colors.black,
         foregroundColor: Colors.white,
-        splashColor: Colors.pink,
-        autofocus: false,
-        highlightElevation: 1.0,
-        disabledElevation: 1.0,
+        splashColor: Colors.grey,
         child: const Icon(Icons.reply),
       ),
     );
